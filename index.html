@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="weather.ico" type="image/x-icon">
+        <title> Weather Conditions</title>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://kit.fontawesome.com/b05af6aa7e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css"> 
+        
+
+    </head>
+    <body>
+        <div class="card-date">
+            <span id="week" class="fecha"></span>
+            <span id="day"class="fecha"></span>
+            <span id="month" class="fecha"></span>
+            <span id="year" class="fecha"></span>
+        </div>
+        <div class="card">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search" >
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="weather loading">
+                <h3 class="city">Weather in Cartago </h3>
+                <div class="temp"><i class="fa-solid fa-temperature-low"></i> 50°C</div>
+                <div class="weather-dos">
+                    <div class="flex">
+                        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
+                        <div class="description">Cloudy</div>
+                    </div>
+                    <div class="humidity">humidity: 60%</div>
+                    <div class="wind">Wind Speed: 6.5 km/h</div>
+                </div>
+
+            </div>
+            
+        </div>
+        <script  src="script.js" defer></script>
+        <script  src="date.js" ></script>
+    </body>
+    
+</html>
